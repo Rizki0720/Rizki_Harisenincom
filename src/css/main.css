@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color:#0ef
+}
+
+*{
+    @apply m-0 p-0 box-border border-none font-poppins scroll-smooth 
+    outline-none 
+}
+
+html{
+    @apply text-[62.5%] overflow-x-hidden
+}
+
+body{
+    @apply bg-black-blue 
+}
+
+section{
+    @apply p-8
+}
+
+
+.header{
+    @apply fixed top-0 left-0 
+}
+
+.header.sticky{
+    @apply border-b-2 border-transparent 
+}
+
+.navbar a{
+    @apply text-2xl text-white  m-4 lg:m-0 lg:mr-4 transition delay-150 block lg:inline-block
+}
+
+.navbar.active{
+    @apply block
+}
+
+
+.navbar a:hover{
+    @apply text-2xl text-sky-400 mr-4 
+}
+
+.home{
+    @apply block  lg:flex lg:justify-center lg:items-center 
+}
+
+
+.home-content h3{
+    @apply text-5xl text-white mt-2 mb-4
+
+}
+
+
+.home-content h1{
+    @apply text-7xl text-white font-semibold 
+}
+
+.social-media a{
+    @apply inline-flex justify-center items-center w-12 h-12 bg-transparent border-2 
+    rounded-full text-6xl text-sky-400 m-4 p-8
+}
+
+.social-media a:hover{
+    @apply bg-cyan-400 text-black-blue
+}
+
+.btn{
+    @apply inline-block m-5 lg:m-5 p-5 rounded-full bg-main-color text-2xl
+    hover:shadow-aqua 
+}
+.btn-about{
+    @apply inline-block m-5 lg:m-5 p-5 rounded-full bg-main-color text-2xl
+    hover:shadow-aqua
+}
+
+.about-content h2{
+    @apply text-6xl font-semibold mb-2 pt-4 lg:pt-0  text-center lg:text-left 
+}
+.about-content h3{
+    @apply text-3xl font-semibold mb-3 mx-3 lg:mx-0 text-center lg:text-left
+}
+
+.portofolio-container .box{ 
+   @apply relative rounded-3xl shadow-xl overflow-hidden flex border-2 border-white 
+} 
+
+
+.box img{
+    @apply w-full 
+}
+/* .box img:hover{
+    @apply transform scale-110
+} */
+
+.box:hover{
+    @apply transform translate-y-0
+}
+
+.box .layer{
+    @apply absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center p-8
+    bg-gradient-to-b from-transparent to-main-color text-white transform translate-y-full transition
+}
+
+.box:hover .layer{
+ @apply transform translate-y-0
+}
+
+.layer h3{
+    @apply text-2xl font-semibold
+}
+
+.layer a{
+    @apply inline-flex justify-center items-center w-10 h-10 bg-white rounded-full mt-2
+}
+
+.layer a i {
+    @apply text-2xl text-second-black-blue 
+}
+
+.contact form{
+    @apply max-w-6xl m-auto text-center mb-6
+}
+
+.contact .input-box input, .contact form textarea{
+    @apply w-full p-6 text-lg text-white bg-second-black-blue rounded-2xl my-2.5
+}
+
+.contact .input-box input{
+    @apply w-48%
+}
+
+.footer-iconTop a{
+    @apply inline-flex justify-center items-center p-8 bg-main-color rounded-full hover:shadow-aqua 
+}
+
+.footer-iconTop a i{
+    @apply text-2xl text-second-black-blue 
+}
+
+
+
+
+
+/* .hamburger-line {
+@apply w-[30px] h-[2px] my-2  block bg-black
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45
+}
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0
+}
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45
+}
+
+.program-active {
+    
+}
+
+.card {
+@apply 
+    bg-white text-gray-700 w-72 min-h-[10rem]
+    shadow-lg rounded-md gap-4
+} 
+
+.badge{ 
+@apply 
+    px-3 py-1 rounded-full text-xs bg-gray-300
+}
+
+.button-primary {
+@apply
+    bg-red-400 px-6 py-2 rounded-md text-white transition hover:bg-red-500/90 
+}
+
+.button-icon{
+@apply 
+    bg-gray-400 p-2 rounded-md hover:bg-gray-600/90
+}  */
